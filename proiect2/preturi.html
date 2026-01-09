@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Prețuri – Exaroton</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Prețuri Exaroton</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="servicii.html">Servicii</a>
+    <a href="preturi.html">Prețuri</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Tabel costuri</h2>
+    <table>
+        <tr>
+            <th>RAM</th>
+            <th>Cost (credite/oră)</th>
+            <th>Utilizare</th>
+        </tr>
+        <tr>
+            <td>1 GB</td>
+            <td>1</td>
+            <td>Server mic</td>
+        </tr>
+        <tr>
+            <td>2 GB</td>
+            <td>2</td>
+            <td>Server mediu</td>
+        </tr>
+        <tr>
+            <td>4 GB</td>
+            <td>4</td>
+            <td>Server mare</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Calculator preț server</h2>
+
+    <label>RAM (GB):</label><br>
+    <select id="ram">
+        <option value="1">1 GB</option>
+        <option value="2">2 GB</option>
+        <option value="4">4 GB</option>
+        <option value="6">6 GB</option>
+    </select>
+
+    <br><br>
+
+    <label>Număr de ore:</label><br>
+    <input type="number" id="hours" value="1" min="1">
+
+    <br><br>
+
+    <button onclick="calculeazaPret()">Calculează</button>
+
+    <p id="rezultat"></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Exaroton</p>
+</footer>
+
+</body>
+</html>
